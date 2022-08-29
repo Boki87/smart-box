@@ -98,7 +98,7 @@ const Login = () => {
             >
                 <Box textAlign={'center'}>
                     <Image src="" />
-                    <Heading color="gray.600">Tapp App</Heading>
+                    <Heading color="gray.600">Smart Box</Heading>
                 </Box>
               <FormControl>
                 <InputGroup>

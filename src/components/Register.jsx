@@ -153,7 +153,7 @@ const Register = () => {
             >
               <Box textAlign={"center"}>
                 <Image src="" />
-                <Heading color="gray.600">Tapp App</Heading>
+                <Heading color="gray.600">SmartBox</Heading>
               </Box>
               <FormControl>
                 <InputGroup>

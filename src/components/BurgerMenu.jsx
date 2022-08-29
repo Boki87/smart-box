@@ -51,7 +51,8 @@ export const BurgerMenuBar = ({ children }) => {
         px="10px"
       >
         <Link to="/">
-          <Image src="/assets/images/main-logo.png" h="auto" w="90px" />
+          <Text fontSize="2xl" fontWeight="bold">SmartBox</Text>
+          {/* <Image src="/assets/images/main-logo.png" h="auto" w="90px" /> */}
         </Link>
 
         <Button

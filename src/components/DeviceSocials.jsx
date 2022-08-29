@@ -1,4 +1,4 @@
-import { Box } from "@chakra-ui/react";
+import { Box, Text, Center } from "@chakra-ui/react";
 import SocialIcon from "./SocialIcon";
 import { sanitizeVideo } from "../lib/utils";
 
@@ -8,12 +8,17 @@ const DeviceSocials = ({ socials }) => {
       {socials.map((social) => {
         if (social.is_public && social.type == "video") {
           return (
+            <>
             <Box key={social.id} p="10px" maxW="md" mx="auto">
               <iframe
                 src={sanitizeVideo(social.url)}
                 style={{ width: "100%", height: "200px", borderRadius: "10px" }}
               />
             </Box>
+            <Center>
+              <Text color="gray.600" fontSize="xl">{social.title}</Text>
+            </Center>
+            </>
           );
         }
       })}

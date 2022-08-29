@@ -7,7 +7,7 @@ const socials = [
   {
     icon: <GrFacebookOption />,
     title: "facebook",
-    url: "https://www.facebook.com",
+    url: "",
   },
   {
     icon: <BsInstagram />,

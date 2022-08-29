@@ -28,7 +28,7 @@ export default function DeviceCard({ device }) {
           src={device.device_type.image}
           minW="100%"
           minH="100%"
-          objectFit="cover"
+          objectFit="contain"
         />
       {/* </a> */}
       </Link>
