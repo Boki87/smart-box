@@ -165,8 +165,8 @@ const EditDevice = () => {
       >
         <Box position="relative">
           <Spinner position="absolute" top="-20px" right="-10px" />
-          <Text fontSize="2xl" fontWeight="bold">SmartBox</Text>
-          {/* <Image w="200px" src="/assets/images/main-logo.png" h="auto" /> */}
+          {/* <Text fontSize="2xl" fontWeight="bold">SmartBox</Text> */}
+          <Image w="200px" src="/assets/images/main-logo.png" h="auto" />
         </Box>
       </Center>
     );

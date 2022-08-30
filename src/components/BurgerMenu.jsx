@@ -22,6 +22,8 @@ export const BurgerMenuButton = () => {
       rounded="full"
       variant="ghost"
       fontSize="xl"
+      color="whiteAplha.800"
+      _hover={{color: 'grayAlpha.100', bg:'whiteAlpha.500'}}
     >
       <CgMenuRight />
     </Button>
@@ -51,8 +53,8 @@ export const BurgerMenuBar = ({ children }) => {
         px="10px"
       >
         <Link to="/">
-          <Text fontSize="2xl" fontWeight="bold">SmartBox</Text>
-          {/* <Image src="/assets/images/main-logo.png" h="auto" w="90px" /> */}
+          {/* <Text fontSize="2xl" fontWeight="bold">SmartBox</Text> */}
+          <Image src="/assets/images/main-logo.png" h="auto" w="110px" />
         </Link>
 
         <Button

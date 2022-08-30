@@ -16,7 +16,7 @@ const DeviceSocials = ({ socials }) => {
               />
             </Box>
             <Center>
-              <Text color="gray.600" fontSize="xl">{social.title}</Text>
+              <Text color="gray.700" fontSize="xl" textAlign="center">{social.title}</Text>
             </Center>
             </>
           );

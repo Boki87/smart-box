@@ -22,8 +22,8 @@ const DeviceHero = ({device}) => {
                 <Box position="absolute" px="6px" pl="15px" top="5px" left="0" w="full" zIndex="2" display="flex" alignItems="center" color="gray.100">
                         <div>
                             <Link to='/'>
-                                {/* <Image src="/assets/images/main-logo-white.png" h="auto" w="90px" /> */}
-                                <Text fontSize="2xl" fontWeight="bold">SmartBox</Text>
+                                <Image src="/assets/images/main-logo-white.png" h="auto" w="110px" />
+                                {/* <Text fontSize="2xl" fontWeight="bold">SmartBox</Text> */}
                             </Link>
                         </div>
                         <Spacer />
