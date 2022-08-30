@@ -32,6 +32,12 @@ const DeviceHero = ({device}) => {
 
                 <Box w="full" h="200px" bg={device.bg_color} borderRadius="3xl" position="relative">
 
+                    {device?.bg_image != '' && <Box position="absolute" left="0px" top="0px" w="full" h="full" borderRadius="3xl" overflow="hidden" display="flex" alignItems="center" justifyContent="center">
+                        <Image src={device.bg_image} minW="100%"
+                    minH="100%"
+                    objectFit="cover" />
+                    </Box> }
+
                     <Box position="absolute" bottom="0" left="0" w="full" display="flex" justifyContent="center">
                             <Avatar animation={avatarAnimation} name={device.name} src={device.avatar} w="150px" h="150px" mb="-30px" border="3px solid white" shadow="md" />
                     </Box> 

@@ -301,7 +301,7 @@ export function compressImage(imageData) {
                 ctx.drawImage(img, 0, 0, width, height)
                 const data = canvas.toDataURL('image/jpeg', 0.5)
                 fetch(data).then(res => res.blob()).then(blob => {
-                    console.log(blob);
+                    // console.log(blob);
                     let file = new File([blob], 'avatar.jpg', {type: 'image/jpeg'})
                     resolve(file)
                 })

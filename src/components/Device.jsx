@@ -46,8 +46,8 @@ const Device = () => {
         }
 
         if (!user) {
-          console.log("add device visit");
-          console.log(deviceRes);
+          // console.log("add device visit");
+          // console.log(deviceRes);
           await addDeviceVisitEntry(deviceRes.id, deviceRes.user_id);
         }
 

@@ -189,15 +189,22 @@ const updateDeviceData = async (id, data) => {
   }
 };
 
-const uploadAvatar = async (file, deviceLinkId) => {
+const uploadImage = async (folder, file, deviceLinkId) => {
   // console.log(file, deviceLinkId)
-  if (!file) return;
+  if (!file) {
+    throw new Error('need a file')
+    return
+  }
+  if (!folder) {
+    throw new Error('need a folder name')
+    return
+  }
   if (file.type.split("/")[0] !== "image") {
     throw new Error("Invalid file type");
   }
   let ext = "." + file.name.split(".").pop();
-  const avatarRef = ref(storage, `avatars/${deviceLinkId + ext}`);
-  const uploadSnapshot = await uploadBytes(avatarRef, file);
+  const imageRef = ref(storage, `${folder}/${deviceLinkId + ext}`);
+  const uploadSnapshot = await uploadBytes(imageRef, file);
   let uploadUrl = getDownloadURL(uploadSnapshot.ref);
   return uploadUrl;
 };
@@ -284,7 +291,7 @@ export {
   getDeviceData,
   getSocialsForDevice,
   updateDeviceData,
-  uploadAvatar,
+  uploadImage,
   updateSocial,
   addSocial,
   deleteSocial,
